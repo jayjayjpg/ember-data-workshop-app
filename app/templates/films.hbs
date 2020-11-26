@@ -1,11 +1,11 @@
 <h1>Films</h1>
-{{#each @model as |film|}}
+<!-- Exercise Finding Records -->
   <section>
     <h2>{{film.title}}</h2>
     <p>{{film.description}}</p>
     <p>by {{film.director}}, produced by {{film.producer}}, released in {{film.releaseDate}}</p>
     <p>Score: {{film.rtScore}}</p>
   </section>
-{{/each}}
+
 
 {{outlet}}
