@@ -1,0 +1,8 @@
+<button type="button" {{on "click" this.createPost}}>Create New Post</button>
+
+{{#if this.currentPost}}
+  <Input @value={{this.currentPost.title}} />
+  <Textarea @value={{this.currentPost.body}} />
+{{/if}}
+
+{{outlet}}
